@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter Three</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom, #ffd6e8, #fff0f5);
+    color: #5c2a3a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.flower {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.button {
+    margin: 10px 0;
+    padding: 14px 24px;
+    width: 240px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #ff8fb1;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff6fa0;
+    transform: translateY(-2px);
+}
+
+/* Floating hearts */
+.hearts {
+    position: fixed;
+    bottom: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    pointer-events: none;
+}
+
+.hearts span {
+    animation: float 10s linear infinite;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.hearts span:nth-child(2) { animation-delay: 2s; }
+.hearts span:nth-child(3) { animation-delay: 4s; }
+.hearts span:nth-child(4) { animation-delay: 6s; }
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="flower">🌸 🌷 🌸</div>
+
+<h1>Chapter Three</h1>
+<p>Some things don’t fit inside a frame.</p>
+
+<a class="button" href="YOUR_SPOTIFY_LINK" target="_blank">
+Our Soundtrack 🎵
+</a>
+
+<a class="button" href="YOUR_VOICE_NOTE_LINK" target="_blank">
+Press When You Miss Me 💌
+</a>
+
+<a class="button" href="YOUR_GOOGLE_FORM_LINK" target="_blank">
+Submit a Grievance 📝
+</a>
+
+<div class="hearts">
+  <span>💗</span>
+  <span>🌸</span>
+  <span>💞</span>
+  <span>🌷</span>
+</div>
+
+</body>
+</html>
